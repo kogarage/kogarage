@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+
+<html lang="hu">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="theme-color" content="#090b10">
+
+<meta name="description" content="K&O Garage Autókozmetika Debrecen-Józsán. Korrekciós polírozás, kerámia bevonat, PPF védőfólia és autóápolás.">
+
+<title>K&O Garage | Autókozmetika Debrecen-Józsa</title>
+
+<style>
+
+:root{--bg:#090b10;--panel:#11151d;--blue:#24c9ff;--pink:#ff4da6;--white:#f4f7fb;--muted:#a6afbd}
+
+*{box-sizing:border-box}
+
+html{scroll-behavior:smooth}
+
+body{margin:0;background:var(--bg);color:var(--white);font-family:Arial,Helvetica,sans-serif;line-height:1.65}
+
+a{color:inherit;text-decoration:none}
+
+.container{width:min(1120px,90%);margin:auto}
+
+header{position:sticky;top:0;z-index:10;background:#090b10ed;border-bottom:1px solid #ffffff12;backdrop-filter:blur(12px)}
+
+.nav{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+
+.logo{font-size:25px;font-weight:900;line-height:1.1;letter-spacing:1px}
+
+.logo span{color:var(--blue)}
+
+.logo small{display:block;font-size:10px;letter-spacing:5px;color:var(--pink);margin-top:5px}
+
+nav{display:flex;gap:24px;font-size:14px;color:#d6dce5}
+
+nav a:hover{color:var(--blue)}
+
+.btn{display:inline-block;background:var(--blue);color:#061019;padding:13px 21px;border-radius:7px;font-weight:800;border:0;cursor:pointer}
+
+.btn:hover{filter:brightness(1.1)}
+
+.btn-outline{background:transparent;border:1px solid #687384;color:white}
+
+.hero{min-height:590px;display:flex;align-items:center;background:linear-gradient(90deg,#090b10 0%,#090b10e8 45%,#090b1050 100%),url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1900&q=85') center/cover}
+
+.hero-content{max-width:690px;padding:90px 0}
+
+.eyebrow{color:var(--blue);font-size:12px;font-weight:bold;letter-spacing:3px;text-transform:uppercase}
+
+h1{font-size:clamp(39px,6vw,70px);line-height:1.08;letter-spacing:-2px;margin:18px 0}
+
+h1 span{color:var(--blue)}
+
+.lead{font-size:18px;color:#c1c8d3;max-width:570px}
+
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+
+section{padding:82px 0}
+
+.section-title{font-size:clamp(28px,4vw,42px);line-height:1.2;margin:10px 0 14px}
+
+.intro{max-width:650px;color:var(--muted)}
+
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:35px}
+
+.card{background:var(--panel);border:1px solid #ffffff12;border-radius:13px;padding:27px 23px;transition:.2s}
+
+.card:hover{border-color:#24c9ff80;transform:translateY(-3px)}
+
+.card .num{font-size:13px;color:var(--blue);letter-spacing:2px}
+
+.card h3{margin:12px 0 8px;font-size:20px}
+
+.card p{color:var(--muted);font-size:15px;margin:0}
+
+.dark-section{background:#0e1118;border-top:1px solid #ffffff0c;border-bottom:1px solid #ffffff0c}
+
+.feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
+
+.feature-image{width:100%;min-height:340px;object-fit:cover;border-radius:14px;border:1px solid #ffffff15}
+
+.checks{padding:0;list-style:none;color:#d3d9e3}
+
+.checks li{margin:13px 0}
+
+.checks li::before{content:"✓";color:var(--blue);font-weight:bold;margin-right:12px}
+
+.callout{padding:40px;border-radius:16px;background:linear-gradient(120deg,#102331,#15131f);border:1px solid #24c9ff40;display:flex;align-items:center;justify-content:space-between;gap:25px}
+
+.callout h2{margin:0 0 8px;font-size:clamp(25px,4vw,36px)}
+
+.callout p{color:var(--muted);margin:0}
+
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:30px}
+
+.contact-box{background:var(--panel);border-radius:12px;padding:26px;border:1px solid #ffffff12}
+
+.contact-box p{color:var(--muted)}
+
+footer{padding:28px 0;border-top:1px solid #ffffff15;color:var(--muted);font-size:13px}
+
+.footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+
+@media(max-width:760px){
+
+ nav{display:none}
+
+ .hero{min-height:540px;background-position:58% center}
+
+ .hero-content{padding:70px 0}
+
+ .cards{grid-template-columns:1fr}
+
+ .feature-grid,.contact-grid{grid-template-columns:1fr}
+
+ .feature-image{min-height:240px}
+
+ section{padding:60px 0}
+
+ .callout{align-items:flex-start;flex-direction:column;padding:28px}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+ <div class="container nav">
+
+  <a class="logo" href="#top">K<span>&</span>O <span>GARAGE</span><small>AUTÓKOZMETIKA</small></a>
+
+  <nav>
+
+   <a href="#szolgaltatasok">Szolgáltatások</a>
+
+   <a href="#rolunk">Rólunk</a>
+
+   <a href="#kapcsolat">Kapcsolat</a>
+
+  </nav>
+
+  <a class="btn" href="#kapcsolat">Ajánlatkérés</a>
+
+ </div>
+
+</header>
+
+<main id="top">
+
+ <section class="hero">
+
+  <div class="container">
+
+   <div class="hero-content">
+
+    <div class="eyebrow">Debrecen · Józsa</div>
+
+    <h1>Autód megérdemli<br>a <span>törődést.</span></h1>
+
+    <p class="lead">Látványosabb fény, ápolt felületek és tartós védelem. Ismerd meg a K&O Garage autókozmetikai szolgáltatásait!</p>
+
+    <div class="actions">
+
+     <a class="btn" href="#szolgaltatasok">Szolgáltatásaink</a>
+
+     <a class="btn btn-outline" href="#kapcsolat">Kérj árajánlatot</a>
+
+    </div>
+
+   </div>
+
+  </div>
+
+ </section>
+
+ <section id="szolgaltatasok">
+
+  <div class="container">
+
+   <div class="eyebrow">Amit autódért teszünk</div>
+
+   <h2 class="section-title">Szolgáltatásaink</h2>
+
+   <p class="intro">Az alapos tisztítástól a fényezés javításán át a külső védelemig segítünk, hogy autód a lehető legjobb formáját mutassa.</p>
+
+   <div class="cards">
+
+    <article class="card"><div class="num">01 / ÁPOLÁS</div><h3>Belső és külső autókozmetika</h3><p>Alapos tisztítás, kárpittisztítás és a belső tér felfrissítése, kívül-belül az autó igényeihez igazítva.</p></article>
+
+    <article class="card"><div class="num">02 / FÉNYEZÉS</div><h3>Korrekciós polírozás</h3><p>A megfelelő polírozási eljárással csökkenthető a fényezésen látható apró karcok és mosási nyomok mennyisége.</p></article>
+
+    <article class="card"><div class="num">03 / VÉDELEM</div><h3>Kerámia bevonat</h3><p>Védőbevonat a könnyebb tisztíthatóságért és a szép, fényes megjelenés megőrzéséért.</p></article>
+
+    <article class="card"><div class="num">04 / PPF</div><h3>Öngyógyuló védőfólia</h3><p>Átlátszó PPF fólia a kiválasztott karosszériaelemek védelmére a mindennapi használatból eredő behatások ellen.</p></article>
+
+    <article class="card"><div class="num">05 / FÓLIÁZÁS</div><h3>Ablak- és autófóliázás</h3><p>Megjelenéshez és igényekhez illeszkedő fóliázási megoldások, előzetes egyeztetéssel.</p></article>
+
+    <article class="card"><div class="num">06 / RÉSZLETEK</div><h3>Lámpafelújítás</h3><p>A bemattult fényszórók felújítása a tisztább megjelenésért. Az állapot alapján egyeztetjük a lehetőségeket.</p></article>
+
+   </div>
+
+  </div>
+
+ </section>
+
+ <section id="rolunk" class="dark-section">
+
+  <div class="container feature-grid">
+
+   <div>
+
+    <div class="eyebrow">K&O Garage Autókozmetika</div>
+
+    <h2 class="section-title">Gondos munka.<br>Látványos eredmény.</h2>
+
+    <p class="intro">Számunkra minden autó más. A munkát az autó állapotához és a megbeszélt célhoz igazítjuk, legyen szó alapos tisztításról, polírozásról vagy fényezésvédelemről.</p>
+
+    <ul class="checks">
+
+     <li>Előzetes egyeztetés és személyre szabott ajánlat</li>
+
+     <li>Az autó állapotához igazított megoldások</li>
+
+     <li>Autóápolás és fényezésvédelem egy helyen</li>
+
+    </ul>
+
+    <a class="btn" href="#kapcsolat">Beszéljük meg az igényeidet</a>
+
+   </div>
+
+   <img class="feature-image" src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&w=1000&q=85" alt="Autóápolás műhelyben" loading="lazy">
+
+  </div>
+
+ </section>
+
+ <section>
+
+  <div class="container">
+
+   <div class="callout">
+
+    <div><h2>Mit szeretnél kihozni az autódból?</h2><p>Írd meg az autó típusát és a kívánt szolgáltatást, és egyeztessünk!</p></div>
+
+    <a class="btn" href="#kapcsolat">Kapcsolatfelvétel</a>
+
+   </div>
+
+  </div>
+
+ </section>
+
+ <section id="kapcsolat">
+
+  <div class="container">
+
+   <div class="eyebrow">Vedd fel velünk a kapcsolatot</div>
+
+   <h2 class="section-title">Kérj árajánlatot!</h2>
+
+   <p class="intro">Az ajánlathoz írd meg, milyen autóról van szó, és melyik szolgáltatás érdekel. Az elérhetőségeinket a közzététel előtt véglegesítjük.</p>
+
+   <div class="contact-grid">
+
+    <div class="contact-box">
+
+     <h3>K&O Garage Autókozmetika</h3>
+
+     <p><strong>Helyszín:</strong><br>Debrecen–Józsa</p>
+
+     <p><strong>Szolgáltatások:</strong><br>Autókozmetika, korrekciós polírozás, kerámia bevonat, PPF és fóliázás.</p>
+
+     <p><strong>Előzetes időpont-egyeztetés szükséges.</strong></p>
+
+    </div>
+
+    <div class="contact-box">
+
+     <h3>Keress minket online!</h3>
+
+     <p>Az alábbi gombokhoz a saját közösségi oldalaink linkjeit adjuk hozzá.</p>
+
+     <!-- IDE KERULNEK A SAJAT OLDALAID LINKJEI -->
+
+     <div class="actions">
+
+      <a class="btn btn-outline" href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a>
+
+      <a class="btn btn-outline" href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+
+      <a class="btn btn-outline" href="https://www.tiktok.com/" target="_blank" rel="noopener">TikTok</a>
+
+     </div>
+
+    </div>
+
+   </div>
+
+  </div>
+
+ </section>
+
+</main>
+
+<footer>
+
+ <div class="container footer-row">
+
+  <div>© 2026 K&O Garage Autókozmetika</div>
+
+  <div>Debrecen–Józsa · Minden jog fenntartva</div>
+
+ </div>
+
+</footer>
+
+</body>
+
+</html>
